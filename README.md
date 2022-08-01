@@ -1,4 +1,4 @@
-# my-first-blog
+# Blogs Blog
 
 Blog feito apartir do tutorial Django Girls
 
