@@ -1,0 +1,46 @@
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+        .speech {
+            width: 75%;
+            background: pink;
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 35px;
+            color: white;
+            position: relative;
+        }
+  
+        .speech:before {
+            content: "";
+            position: absolute;
+            border-left: 20px solid pink;
+            border-right: 20px solid transparent;
+            border-top: 20px solid pink;
+            border-bottom: 20px solid transparent;
+            right: -20px;
+            top: 10px;
+        }
+
+</style>
+
+<body>   
+    <div class="speech bubble">
+        <h1>OPS! <br>
+             ERRO 404 <br>
+              Página não encontrada <br>
+             </h1>
+    </div>
+</body>
+</html>
+{% endblock %}

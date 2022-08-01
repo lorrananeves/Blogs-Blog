@@ -98,3 +98,7 @@ def logout_request(request):
     logout(request)
     messages.info(request, "You have successfully logged out.")
     return redirect("login")
+
+
+def handler404(request, exception):
+    return render(request, 'blog/404.html', status=404)

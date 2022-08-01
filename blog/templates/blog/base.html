@@ -14,18 +14,18 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 {% if user.is_authenticated %}
                 
-                <li class="logout">
-                  <a class="nav-link" href="/logout">Logout</a>
-                </li>
-                <li class="Welcome">
+                <button class="Welcome">
                   <a class="nav-link" href="#">Welcome, {{user.username}}</a>
-                </li>
+                </button>
+                <button class="logout">
+                  <a class="nav-link" href="/logout">Logout</a>
+                </button>
           
                 {% else %}
           
-                <li class="nav-item">
+                <button class="nav-item">
                   <a class="nav-link" href="/login">Login</a>
-                </li>
+                </button>
           
                 {% endif %}
             </div>
